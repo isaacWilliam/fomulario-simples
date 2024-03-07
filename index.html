@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Criar Nova Conta</h2>
+
+            <form id="form" class="form">
+                <div class="form-control" onchange="checkInputs('nome')">
+                    <label for="nome">Usuário</label>
+                    <input type="text" id="nome" placeholder="Digite o nome do usuário...">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Problema</small>
+                </div>
+                <div class="form-control" onchange="checkInputs('email')">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" placeholder="Digite o E-mail...">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>.</small>
+                </div>
+                <div class="form-control" onchange="checkInputs('senha')">
+                    <label for="senha">Senha</label>
+                    <input type="text" id="senha" placeholder="Digite o senha do usuário...">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Problema</small>
+                </div>
+                <div class="form-control" onchange="checkInputs('senha2')">
+                    <label for="senha2">Confirmar senha</label>
+                    <input type="text" id="senha2" placeholder="Digite novamente a senha...">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>.</small>
+                </div>
+                <button type="submit" id="button">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/dde2182585.js" crossorigin="anonymous"></script>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>

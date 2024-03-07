@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*input:focus-visible {*/
+/*    color: transparent;*/
+/*    background: transparent;*/
+/*    border: none;*/
+/*}*/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #0a99bf, #7d1f8d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #0e0e0e;
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #EEEEEE;
+    padding: 20px;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control i {
+    position: absolute;
+    top: 37px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small {
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button {
+    background-color: #7d1f8d;
+    border: #7d1f8d;
+    color: #ffffff;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form button:disabled {
+    background-color: #795183;
+    border: #7d1f8d;
+    color: #c7c7c7;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control.error small {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
